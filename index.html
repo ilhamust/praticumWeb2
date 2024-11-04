@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogspot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#article">Artikel</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <div id="content">
+        <section id="home" role="heading">
+          <h1>Selamat Datang di Blogspot</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            fuga perspiciatis adipisci fugiat earum, omnis nesciunt molestiae
+            harum inventore ipsa voluptatibus dicta aperiam recusandae alias
+            sunt quae dolores magnam dolorum?
+          </p>
+        </section>
+        <section id="article">
+          <article>
+            <h2>Pengertian VLAN</h2>
+            <p>
+              VLAN (Virrtuak LAN) adalah suatu model jaringan yang tidak
+              terbatas pada lokasi fisik seperti LAN, hal ini mengakibatkan
+              suatu network dapat dikonfigurasi secara virtual tanpa harus
+              menuruti lokasi fisik peralatan. Penggunaan VLAN akan membuat
+              pengaturan jaringan menjadi sangat fleksibel karena dapat dibuat
+              segmen yang bergantung pada organisasi, tanpa bergantung lokasi
+              workstations. VLAN diciptakan untuk menyediakan layanan
+              segementasi secara tradisional disediakan oleh roauter di
+              konfigurasi LAN. VLAN menangani masalah – masalah seperti
+              skalabilitas, keamanan, dan manajemen jaringan
+            </p>
+          </article>
+          <article>
+            <h2>Pengertian VTP</h2>
+            <p>
+              VTP (virtual truking protokol) adalah suatu protocol yang
+              mengenalkan suatu VLAN yang telah ada agar dapat bekomunikasi
+              dengan jaringan. Atau suatu metode dalam hubungan jarigan LAN
+              dengan Ethernet untuk menyambungkan komunikasi dengan menggunakan
+              informasi VLAN, khususnya ke VLAN. VTP terbagi menjadi beberapa
+              mode dan berguna untuk mempermudah admin dalam melakuka
+              konfigurasi pada switch catalyst.
+            </p>
+          </article>
+        </section>
+        <form
+          action="#"
+          method="POST"
+          aria-labelledby="form-heading"
+          id="kontak"
+          role="form"
+        >
+          <h2 id="form-heading">Formulir Kontak</h2>
+          <label for="name">Nama : </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Masukkan nama Anda"
+            required
+            aria-required="true"
+            data-user-id="1"
+          />
+
+          <label for="email">Email : </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukkan email Anda"
+            required
+            aria-required="true"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            data-email-id="5"
+          />
+
+          <label for="message">Pesan : </label>
+          <textarea
+            type="message"
+            name="message"
+            placeholder="Tulis pesan Anda"
+            required
+            aria-required="true"
+          ></textarea>
+
+          <button type="submit" aria-label="Kirim Formulir" data-pesan-id="7">
+            Kirim
+          </button>
+        </form>
+      </div>
+
+      <aside>
+        <figure>
+          <header>
+            <h2>Saya Malas</h2>
+          </header>
+          <img
+            src="https://storage.googleapis.com/fastwork-static/d87259bc-e0aa-4e38-957f-80b5a6a2492a.jpg"
+            alt=""
+          />
+          <figcaption>ilustrasi orang malas</figcaption>
+        </figure>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2024 Blogspot. Ilham Mustaqim.</p>
+    </footer>
+  </body>
+</html>
